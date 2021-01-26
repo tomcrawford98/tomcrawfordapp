@@ -11,7 +11,10 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 <androidx.cardview.widget.CardView
+    android:clickable="true"
     android:layout_width="match_parent"
+    app:cardCornerRadius="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
     android:layout_height="200dp"
     app:cardElevation="3dp">
     <LinearLayout
@@ -34,7 +37,7 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:gravity="center"
-            android:text="Breakfast Recipes"/>
+            android:text="@string/breakfast_recipes"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
@@ -52,18 +55,19 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/pancake"
+                android:src="@drawable/lunch"
                 android:scaleType="centerCrop"/>
             <TextView
+                android:id="@+id/text_home2"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="-50dp"
                 android:textSize="25sp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/colorPrimaryLight"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Breakfast Recipes"/>
+                android:text="@string/lunch_recipes"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -80,18 +84,19 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/pancake"
+                android:src="@drawable/dinner"
                 android:scaleType="centerCrop"/>
             <TextView
+                android:id="@+id/text_home3"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="-50dp"
                 android:textSize="25sp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/design_default_color_secondary"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Breakfast Recipes"/>
+                android:text="Dinner Recipes"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -108,9 +113,10 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/pancake"
+                android:src="@drawable/snacks"
                 android:scaleType="centerCrop"/>
             <TextView
+                android:id="@+id/text_home4"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="-50dp"
@@ -119,7 +125,7 @@
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Breakfast Recipes"/>
+                android:text="Snacks Recipes"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -136,18 +142,19 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/pancake"
+                android:src="@drawable/dessert"
                 android:scaleType="centerCrop"/>
             <TextView
+                android:id="@+id/text_home5"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="-50dp"
                 android:textSize="25sp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/design_default_color_on_secondary"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Breakfast Recipes"/>
+                android:text="Dessert Recipes"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

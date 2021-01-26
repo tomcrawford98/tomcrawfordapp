@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/placeholder"
+    android:background="@drawable/chef"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -18,6 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/welcome"
+            android:textSize="50px"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="#100101" />
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
     </LinearLayout>

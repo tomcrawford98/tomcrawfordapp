@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ThemeOverlay.Tomcrawfordapp.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
+        <item name="fullscreenTextColor">@color/light_blue_A400</item>
+    </style>
+
+    <color name="purple_200">#673AB7</color>
+    <color name="purple_700">#3F2C5F</color>
+    <color name="black">#070707</color>
+    <color name="teal_200">#FF9800</color>
+    <color name="light_blue_900">#08E3FF</color>
+    <color name="light_blue_A400">#00B5C5</color>
 </resources>
