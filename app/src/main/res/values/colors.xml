@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-        <color name="colorPrimary">#2196F3</color>
+        <color name="colorPrimary">#7B1FA2</color>
         <color name="colorPrimaryLight">#64b5f6</color>
         <color name="colorPrimaryDark">#1976D2</color>
 
@@ -21,6 +21,12 @@
         <color name="button_background">#90A8C3</color>
         <color name="button_text">#F8F1FF</color>
         <color name="small_text">#888888</color>
+        <color name="purple_200">#673AB7</color>
+        <color name="purple_700">#3F2C5F</color>
+        <color name="black">#070707</color>
+        <color name="teal_200">#FF9800</color>
+        <color name="light_blue_900">#08E3FF</color>
+        <color name="light_blue_A400">#00B5C5</color>
 
 
 </resources>

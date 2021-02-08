@@ -38,7 +38,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn_searchGallery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_searchGallery"
-        app:menu="@menu/menu_gallery">
+        app:menu="@menu/menu_gallery"
+        tools:visibility="visible">
 
     </androidx.appcompat.widget.Toolbar>
 

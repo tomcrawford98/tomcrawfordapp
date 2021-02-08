@@ -35,13 +35,21 @@
     <string name="search">Search</string>
     <string name="title_activity_view_image">activity_view_image</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="title_activity_create_breakfast_recipe">activity_create_breakfastRecipe</string>
+    <string name="lbl_createBreakfast">Create Breakfast</string>
+    <string name="lbl_notes">Create Notes</string>
+    <string name="lbl_date">Recipe Date</string>
+    <string name="normal_map">Normal</string>
+    <string name="hybrid_map">Hybrid</string>
+    <string name="satellite_map">Sattelite</string>
+    <string name="terrain_map">Terrain</string>
+    <string name="lat_long_snippet">Lat: %1$.5f, Long: %2$.5f</string>
+    <string name="dropped_pin">Dropped Pin</string>
+    <string name="poi">poi</string>
+    <string name="filter">filter</string>
+    <string name="BonAppEtit">BonAppEtit</string>
 
 
 </resources>

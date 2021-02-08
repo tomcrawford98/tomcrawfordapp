@@ -17,11 +17,11 @@
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
-    <fragment
+   <!-- <fragment
         android:id="@+id/nav_foodMap"
-        android:name="com.example.tomcrawfordapp.FoodMapFragment"
+        android:name="com.example.tomcrawfordapp.MapsActivity"
         android:label="Food Map"
-        tools:layout="@layout/fragment_food_map" />
+        tools:layout="@layout/fragment_food_map" />-->
     <fragment
         android:id="@+id/nav_recipeLog"
         android:name="com.example.tomcrawfordapp.RecipeLog"
@@ -37,5 +37,10 @@
         android:name="com.example.tomcrawfordapp.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_foodMap"
+        android:name="com.example.tomcrawfordapp.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 
 </navigation>

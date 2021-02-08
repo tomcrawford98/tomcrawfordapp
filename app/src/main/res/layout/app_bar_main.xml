@@ -7,23 +7,30 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        app:title="Welcome To Bon-App-Etit!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Tomcrawfordapp.AppBarOverlay">
+        android:theme="@style/Theme.AppCompat">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Tomcrawfordapp.PopupOverlay"
-            app:titleTextColor="#fff"
-            app:title="Welcome to BonAppEtit Recipe App!"/>
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryLight"
+            app:popupTheme="@style/Theme.AppCompat">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/BonAppEtit"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20dp"
+            />
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
-
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
