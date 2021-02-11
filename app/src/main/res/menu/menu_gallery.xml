@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GalleryFragment">
+    <item
+        android:id="@+id/action_sort_food"
+        android:orderInCategory="10"
+        android:title="Sort By Food"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sort_vplace"
+        android:orderInCategory="10"
+        android:title="Sort By Visited Place"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sort_date"
+        android:orderInCategory="10"
+        android:title="Sort By Date"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sort_location"
+        android:orderInCategory="10"
+        android:title="Sort By Location"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sort_tag"
+        android:orderInCategory="10"
+        android:title="Sort By Tag"
+        app:showAsAction="never" />
+
+
+</menu>

@@ -42,5 +42,10 @@
         android:name="com.example.tomcrawfordapp.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/viewBreakfastFragment"
+        android:name="com.example.tomcrawfordapp.ViewBreakfastFragment"
+        android:label="fragment_view_breakfast"
+        tools:layout="@layout/fragment_view_breakfast" />
 
 </navigation>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity_create_breakfastRecipe">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="75dp">
+
+    <TextView
+        android:id="@+id/title_createBreakfast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_createBreakfast"
+        android:theme="@style/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/RecipeName"
+            android:layout_width="324dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="12dp"
+            android:text="Breakfast Recipe Name"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_createBreakfast" />
+
+        <EditText
+            android:id="@+id/edit_RecipeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="e.g. Full English"
+            android:inputType="textPersonName"
+            android:theme="@style/edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/RecipeName"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeName" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/button_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_RecipeName" />
+
+        <TextView
+            android:id="@+id/RecipeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe Date"
+            android:textSize="25dp"
+            android:theme="@style/label_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_createBreakfast"
+            app:layout_constraintVertical_bias="0.28" />
+
+        <EditText
+            android:id="@+id/edit_RecipeStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:theme="@style/edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecipeDate" />
+
+        <Button
+            android:id="@+id/RecipeStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorScreenBackground"
+            android:text="SELECT DATE"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_RecipeStartDate"
+            app:layout_constraintEnd_toEndOf="@+id/edit_RecipeStartDate"
+            app:layout_constraintTop_toTopOf="@+id/edit_RecipeStartDate"
+            app:layout_constraintVertical_bias="0.526" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="75dp"
+            android:layout_height="46dp"
+            android:background="#9C27B0"
+            android:text="Save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
