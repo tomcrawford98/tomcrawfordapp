@@ -24,7 +24,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.FoodVi
     }
 
     private final LayoutInflater mInflater;
-    private List<Food> mFood; // Cached copy of words
+    private List<Food> mFood; // Cached copy of food
 
     public FoodListAdapter(Context context) { mInflater = LayoutInflater.from(context); }
 
@@ -46,7 +46,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.FoodVi
     }
 
     // getItemCount() is called many times, and when it is first called,
-    // mWords has not been updated (means initially, it's null, and we can't return null).
+    // mFood has not been updated (means initially, it's null, and we can't return null).
     @Override
     public int getItemCount() {
         if (mFood != null)

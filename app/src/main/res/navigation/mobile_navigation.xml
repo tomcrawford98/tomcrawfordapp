@@ -9,7 +9,11 @@
         android:id="@+id/nav_home"
         android:name="com.example.tomcrawfordapp.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_viewBreakfastFragment"
+            app:destination="@id/viewBreakfastFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -46,6 +50,18 @@
         android:id="@+id/viewBreakfastFragment"
         android:name="com.example.tomcrawfordapp.ViewBreakfastFragment"
         android:label="fragment_view_breakfast"
-        tools:layout="@layout/fragment_view_breakfast" />
+        tools:layout="@layout/fragment_view_breakfast" >
+        <argument
+            android:name="mealName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_viewBreakfastFragment_to_createRecipeFragment"
+            app:destination="@id/createRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createRecipeFragment"
+        android:name="com.example.tomcrawfordapp.createRecipeFragment"
+        android:label="fragment_create_recipe"
+        tools:layout="@layout/fragment_create_recipe" />
 
 </navigation>

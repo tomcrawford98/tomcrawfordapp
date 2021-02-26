@@ -1,12 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorTextHint"
     tools:context=".RecipeLog">
 
+    <EditText
+        android:id="@+id/search_label"
+        android:layout_width="204dp"
+        android:layout_height="78dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/title_search_recipes"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/search_button"
+        style="@style/Theme.AppCompat"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/search_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:drawableEnd="@drawable/ic_search_black_24dp"
+        android:gravity="right|center_vertical"
+        android:paddingHorizontal="10dp"
+        android:text="@string/search"
+        android:textColor="@color/purple_200"
+        android:textSize="50px"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_label" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sample_search_suggestions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_button">
+
+        <Button
+            android:id="@+id/home_breakfast_filter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:text="@string/breakfast"
+            android:textColor="@color/colorPrimaryLight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/home_lunch_filter"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/home_lunch_filter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="@string/lunch"
+            android:textColor="@color/purple_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/home_dinner_filter"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_breakfast_filter"
+            app:layout_constraintTop_toTopOf="@+id/home_breakfast_filter" />
+
+        <Button
+            android:id="@+id/home_dinner_filter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="@string/dinner"
+            android:textColor="@color/purple_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/home_lunch_filter"
+            app:layout_constraintTop_toTopOf="@+id/home_lunch_filter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewForSearchResults"
+        android:layout_width="403dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample_search_suggestions_container"
+        app:layout_constraintVertical_bias="0.0" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

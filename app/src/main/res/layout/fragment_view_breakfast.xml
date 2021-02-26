@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
-            android:text="Breakfast Recipes"
+            android:text="@string/breakfast_recipes"
             android:theme="@style/title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="50dp"
-            android:text="Create Breakfast Recipe"
+            android:text="@string/create_recipe"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_food" />
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="Your Breakfast Recipes"
+            android:text="@string/your_recipes"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
             android:theme="@style/label_text"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +75,7 @@
             app:layout_constraintTop_toBottomOf="@+id/food_label">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerview_holiday"
+                android:id="@+id/recyclerview_food"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"

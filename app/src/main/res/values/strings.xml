@@ -50,6 +50,12 @@
     <string name="poi">poi</string>
     <string name="filter">filter</string>
     <string name="BonAppEtit">BonAppEtit</string>
+    <string name="create_recipe">Create Recipe</string>
+    <string name="your_recipes">Your Recipes</string>
+    <string name="title_search_recipes">Search For Recipes</string>
+    <string name="breakfast">breakfast</string>
+    <string name="lunch">lunch</string>
+    <string name="dinner">dinner</string>
 
 
 </resources>
