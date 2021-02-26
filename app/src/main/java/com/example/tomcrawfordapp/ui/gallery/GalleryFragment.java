@@ -31,31 +31,40 @@ public class GalleryFragment extends Fragment {
    GalleryAdapter galleryAdapter;
    List<String> images;
    TextView gallery_number;
-
    private static final int MY_READ_PERMISSION_CODE = 101;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_gallery, container, false);
+        return view;
+    }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-       /* gallery_number = view.findViewById(R.id.gallery_number);
+        gallery_number = view.findViewById(R.id.gallery_number);
         recyclerView = view.findViewById(R.id.recycler_gallery_images);
 
-        if(ContextCompat.checkSelfPermission(GalleryFragment.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(GalleryFragment.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, MY_READ_PERMISSION_CODE);
+        if(ContextCompat.checkSelfPermission(getContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, MY_READ_PERMISSION_CODE);
         } else {
             loadImages();
         }
-*/
     }
-   /* private void loadImages(){
+    private void loadImages(){
       recyclerView.setHasFixedSize(true);
-      recyclerView.setLayoutManager(new GridLayoutManager(this, 4));
-      images = ImageGallery.listOfImages(this);
-      galleryAdapter = new GalleryAdapter(this, images, new GalleryAdapter.PhotoListener() {
+      recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 4));
+      images = ImageGallery.listOfImages(getContext());
+      galleryAdapter = new GalleryAdapter(getContext(), images, new GalleryAdapter.PhotoListener() {
           @Override
           public void onPhotoCLick(String path) {
-              Toast.makeText(GalleryFragment.this, ""+path, Toast.LENGTH_SHORT).show();
+              Toast.makeText(getContext(), ""+path, Toast.LENGTH_SHORT).show();
           }
       });
 
@@ -68,11 +77,11 @@ public class GalleryFragment extends Fragment {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == MY_READ_PERMISSION_CODE){
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                Toast.makeText(this, "Read External Storage Permission Granted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Read External Storage Permission Granted", Toast.LENGTH_SHORT).show();
                 loadImages();
             } else {
-                Toast.makeText(this, "Read External Permission Denied", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Read External Permission Denied", Toast.LENGTH_SHORT).show();
             }
         }
-    }*/
+    }
 }

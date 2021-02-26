@@ -8,25 +8,25 @@
     android:background="@color/light_blue_900"
     android:orientation="vertical">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="56dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
 
-    <TextView
-        android:id="@+id/gallery_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:layout_centerVertical="true"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/gallery_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
-</RelativeLayout>
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recycler_gallery_images"/>
+        android:id="@+id/recycler_gallery_images" />
 
 </LinearLayout>
